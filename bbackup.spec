@@ -7,7 +7,9 @@ Release:	1
 License:	GPL
 Group:		Networking/Utilities
 Group(de):	Netzwerkwesen/Werkzeuge
+Group(es):	Red/Utilitarios
 Group(pl):	Sieciowe/Narzêdzia
+Group(pt_BR):	Rede/Utilitários
 Source0:	http://prdownloads.sourceforge.net/bbackup/%{name}-%{version}.tar.gz
 Requires:	tar >= 1.12
 BuildRequires:	perl >= 5.6.0
@@ -36,15 +38,13 @@ w zwyk³ych plikach.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d	$RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir}/bbackup,%{_mandir}/man1}
-install -d	$RPM_BUILD_ROOT%{_var}/bbackup
-ln -s		$RPM_BUILD_ROOT%{_mandir} $RPM_BUILD_ROOT/%{_prefix}/man
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir}/bbackup,%{_mandir}/man1} \
+	$RPM_BUILD_ROOT%{_var}/bbackup
 
 %{__make} install \
 	BINDEST=$RPM_BUILD_ROOT%{_bindir} \
 	ETCDEST=$RPM_BUILD_ROOT%{_sysconfdir} \
-	MANDEST=$RPM_BUILD_ROOT%{_prefix}
-
+	MANDEST=$RPM_BUILD_ROOT%{_datadir}
 
 gzip -9nf README THANKS TODO
 
