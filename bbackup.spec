@@ -16,11 +16,11 @@ URL:		http://bbackup.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-bbackup is a sophisticated frontend for GNU-tar. It allows to perform
-full backups as well as incremental backups. It can handle a number of
-filesystems to be backed up (which could even be mounted at runtime).
-It is possible to write backups either to streaming media or to plain
-files (perferrably on a separate harddisk).
+bbackup is a sophisticated frontend for GNU-tar. It allows you to
+perform full backups as well as incremental backups. It can handle
+a number of filesystems to be backed up (which could even be mounted
+at runtime).  It is possible to write backups either to streaming
+media or to plain files (preferably on a separate harddisk).
 
 %description -l pl
 bbackup jest wyrafinowan± nak³adk± na GNU tar. Pozwala on na tworzenie
