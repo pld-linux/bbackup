@@ -41,6 +41,7 @@ w zwyk³ych plikach.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d	$RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir}/bbackup,%{_mandir}/man1}
+install -d	$RPM_BUILD_ROOT%{_var}/bbackup
 ln -s		$RPM_BUILD_ROOT%{_mandir} $RPM_BUILD_ROOT/%{_prefix}/man
 
 %{__make} install \
@@ -57,6 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.gz
+%attr(750,root,root) %dir %{_var}/bbackup
 %attr(750,root,root) %dir %{_sysconfdir}/bbackup
 %config(noreplace) %verify(not md5 size mtime) %attr(640,root,root) %{_sysconfdir}/bbackup/*
 %attr(755,root,root) %{_bindir}/*
