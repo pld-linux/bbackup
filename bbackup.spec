@@ -7,6 +7,7 @@ Release:	1
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://dl.sourceforge.net/bbackup/%{name}-%{version}.tar.gz
+# Source0-md5:	3fcff65424da518ca351971c00b51912
 URL:		http://bbackup.sourceforge.net/
 BuildRequires:	perl >= 5.6.0
 BuildRequires:	perl-AppConfig
