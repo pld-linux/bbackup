@@ -12,7 +12,7 @@ Source0:	http://prdownloads.sourceforge.net/bbackup/%{name}-%{version}.tar.gz
 Requires:	tar >= 1.12
 BuildRequires:	perl >= 5.6.0
 BuildRequires:	perl-AppConfig
-BuildRequires:	perl-modules
+BuildRequires:	perl-devel
 BuildArch:	noarch
 URL:		http://bbackup.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
