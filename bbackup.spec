@@ -25,7 +25,7 @@ It is possible to write backups either to streaming media or to plain
 files (perferrably on a separate harddisk).
 
 %description -l pl
-bbackup jest wyszukan± nak³adk± na GNU tar. Pozwala on na tworzenie
+bbackup jest wyrafinowan± nak³adk± na GNU tar. Pozwala on na tworzenie
 zarówno pe³nych jak i inkrementalnych kopii zapasowych. Potrafi
 obs³ugiwaæ wiele systemów plików przeznaczonych do archiwizacji.
 Mo¿liwe jest zapisywanie kopii zarówno na mediach strumieniowych jak i
