@@ -42,14 +42,12 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir}/bbackup,%{_mandir}/man1} \
 	ETCDEST=$RPM_BUILD_ROOT%{_sysconfdir} \
 	MANDEST=$RPM_BUILD_ROOT%{_datadir}
 
-gzip -9nf README THANKS TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README THANKS TODO
 %attr(750,root,root) %dir %{_var}/bbackup
 %attr(750,root,root) %dir %{_sysconfdir}/bbackup
 %config(noreplace) %verify(not md5 size mtime) %attr(640,root,root) %{_sysconfdir}/bbackup/*
