@@ -6,13 +6,13 @@ Version:	0.52
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
-Source0:	http://prdownloads.sourceforge.net/bbackup/%{name}-%{version}.tar.gz
-Requires:	tar >= 1.12
+Source0:	http://dl.sourceforge.net/bbackup/%{name}-%{version}.tar.gz
+URL:		http://bbackup.sourceforge.net/
 BuildRequires:	perl >= 5.6.0
 BuildRequires:	perl-AppConfig
 BuildRequires:	perl-devel
+Requires:	tar >= 1.12
 BuildArch:	noarch
-URL:		http://bbackup.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
