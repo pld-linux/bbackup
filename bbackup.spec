@@ -17,10 +17,6 @@ BuildArch:	noarch
 URL:		http://bbackup.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_sysconfdir	/etc
-%define		_localstatedir	/var
-%define		_libexecdir	%{_libdir}/amanda
-
 %description 
 bbackup is a sophisticated frontend for GNU-tar. It allows to perform
 full backups as well as incremental backups. It can handle a number of
