@@ -3,7 +3,7 @@ Summary:	A sophisticated backup script, based on GNU tar
 Summary(pl):	Wyszukany skrypt to tworzenia kopii zapasowych
 Name:		bbackup
 Version:	0.52
-Release:	1
+Release:	2
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://dl.sourceforge.net/bbackup/%{name}-%{version}.tar.gz
