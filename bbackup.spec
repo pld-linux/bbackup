@@ -19,10 +19,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 bbackup is a sophisticated frontend for GNU-tar. It allows you to
-perform full backups as well as incremental backups. It can handle
-a number of filesystems to be backed up (which could even be mounted
-at runtime).  It is possible to write backups either to streaming
-media or to plain files (preferably on a separate harddisk).
+perform full backups as well as incremental backups. It can handle a
+number of filesystems to be backed up (which could even be mounted at
+runtime). It is possible to write backups either to streaming media or
+to plain files (preferably on a separate harddisk).
 
 %description -l pl
 bbackup jest wyrafinowan± nak³adk± na GNU tar. Pozwala on na tworzenie
@@ -52,6 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc README THANKS TODO
 %attr(750,root,root) %dir %{_var}/bbackup
 %attr(750,root,root) %dir %{_sysconfdir}/bbackup
-%config(noreplace) %verify(not md5 size mtime) %attr(640,root,root) %{_sysconfdir}/bbackup/*
+%config(noreplace) %verify(not md5 mtime size) %attr(640,root,root) %{_sysconfdir}/bbackup/*
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man?/*
