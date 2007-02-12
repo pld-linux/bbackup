@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	A sophisticated backup script, based on GNU tar
-Summary(pl):	Wyszukany skrypt to tworzenia kopii zapasowych
+Summary(pl.UTF-8):   Wyszukany skrypt to tworzenia kopii zapasowych
 Name:		bbackup
 Version:	0.52
 Release:	3
@@ -24,12 +24,12 @@ number of filesystems to be backed up (which could even be mounted at
 runtime). It is possible to write backups either to streaming media or
 to plain files (preferably on a separate harddisk).
 
-%description -l pl
-bbackup jest wyrafinowan± nak≥adk± na GNU tar. Pozwala on na tworzenie
-zarÛwno pe≥nych jak i inkrementalnych kopii zapasowych. Potrafi
-obs≥ugiwaÊ wiele systemÛw plikÛw przeznaczonych do archiwizacji.
-Moøliwe jest zapisywanie kopii zarÛwno na mediach strumieniowych jak i
-w zwyk≥ych plikach.
+%description -l pl.UTF-8
+bbackup jest wyrafinowanƒÖ nak≈ÇadkƒÖ na GNU tar. Pozwala on na tworzenie
+zar√≥wno pe≈Çnych jak i inkrementalnych kopii zapasowych. Potrafi
+obs≈Çugiwaƒá wiele system√≥w plik√≥w przeznaczonych do archiwizacji.
+Mo≈ºliwe jest zapisywanie kopii zar√≥wno na mediach strumieniowych jak i
+w zwyk≈Çych plikach.
 
 %prep
 %setup -q
