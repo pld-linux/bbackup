@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	A sophisticated backup script, based on GNU tar
-Summary(pl.UTF-8):   Wyszukany skrypt to tworzenia kopii zapasowych
+Summary(pl.UTF-8):	Wyszukany skrypt to tworzenia kopii zapasowych
 Name:		bbackup
 Version:	0.52
 Release:	3
